@@ -1,0 +1,2 @@
+#define SECRET_SSID "HUAWEI-Tf5c"
+#define SECRET_PASS "6a73DhgB"
