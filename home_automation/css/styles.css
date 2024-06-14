@@ -1,0 +1,210 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ecf0f1;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-header img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sidebar-header h2 {
+    color: #ecf0f1;
+    margin: 10px 0 0 0;
+}
+
+.sidebar-nav {
+    width: 100%;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-item.active, .nav-item:hover {
+    background-color: #323232;
+}
+
+.nav-item .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.home-icon::before { content: "🏠"; }
+.rooms-icon::before { content: "🛏️"; }
+.security-icon::before { content: "🔒"; }
+.cctv-icon::before { content: "📷"; }
+.settings-icon::before { content: "⚙️"; }
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info .time, .user-info .date, .user-info .temp {
+    margin-right: 20px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notifications-icon::before { content: "🔔"; }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the main content horizontally */
+    width: 100%;
+}
+
+.greeting {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.greeting h1 {
+    font-size: 2.5em;
+    color: #1abc9c;
+}
+
+.greeting p {
+    font-size: 1.2em;
+    color: #bdc3c7;
+}
+
+.controls, .temperature-control {
+    margin-bottom: 40px;
+    text-align: center; /* Center the text */
+}
+
+.controls h2, .temperature-control h2 {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.room-card, .temperature-control {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+}
+
+.room-card p, .temperature-control p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px; /* Add margin between buttons */
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 100px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #27ae60;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2ecc71;
+}
+
+#currentTemperature, #heaterStatus {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e74c3c;
+}
